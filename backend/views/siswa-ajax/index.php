@@ -5,6 +5,8 @@ use yii\bootstrap4\Modal;
 use kartik\grid\GridView;
 use johnitvn\ajaxcrud\CrudAsset;
 use johnitvn\ajaxcrud\BulkButtonWidget;
+use kartik\icons\Icon;
+
 
 /* @var $this yii\web\View */
 /* @var $searchModel backend\models\SiswaSearch */
@@ -14,8 +16,9 @@ $this->title = 'Siswas';
 $this->params['breadcrumbs'][] = $this->title;
 
 CrudAsset::register($this);
-
+Icon::map($this);  
 ?>
+asdfas
 <div class="siswa-index">
     <div id="ajaxCrudDatatable">
         <?=GridView::widget([
